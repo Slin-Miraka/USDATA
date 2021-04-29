@@ -26,7 +26,7 @@ data["return"] = data["Close"].pct_change()
 data["Adj return"] = data["Adj Close"].pct_change()
 st.write(data)
 
-download=st.button('下载CSV数据')
+download=st.button('Download CSV files')
 
 ###file name
 filename =  str(start_date) + "-" + str(end_date) + "-" + str(symbol) + ".csv"
