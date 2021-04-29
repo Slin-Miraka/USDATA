@@ -1,0 +1,6 @@
+streamlit
+yfinance
+datetime
+base64
+numpy
+pandas
