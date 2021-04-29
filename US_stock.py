@@ -24,7 +24,7 @@ start_date, end_date = get_date()
 data = yf.download(symbol, start=start_date, end=end_date)
 data["return"] = data["Close"].pct_change()
 data["Adj return"] = data["Adj Close"].pct_change()
-#data = data.reset_index
+data = data.reset_index()
 st.write(data)
 
 download=st.button('Download CSV files')
